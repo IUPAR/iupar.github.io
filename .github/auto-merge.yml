@@ -5,6 +5,7 @@
 # https://developer.github.com/v4/enum/commentauthorassociation/
 minApprovals:
   CONTRIBUTOR: 1
+  OWNER: 1
 
 # Pull requests will only be automatically merged when all of these reviewers have approved the
 # pull request.
