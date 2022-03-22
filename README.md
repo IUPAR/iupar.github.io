@@ -1,4 +1,43 @@
 # 服了 我教你们怎么用网页提交pull request
+他妈，如果你看过下面那条之后记得看这一条。没看过的可以先不看。
+
+记得每次在想修改自己fork的仓库之前，先从位于IUPAR的主仓库拉取，然后再修改内容，以防一些他妈的冲突，下面是拉取的教程：
+
+点击pull request，然后点击new pull requests
+
+![](https://i.imgur.com/FtRIT3z.png)
+
+然后是这个页面
+
+![](https://i.imgur.com/1if34pX.jpeg)
+
+
+
+接着是以下几个步骤：
+
+![](https://i.imgur.com/zrh1nPE.jpeg)
+
+![](https://i.imgur.com/ba8YKWL.jpeg)
+
+![](https://i.imgur.com/mNqmCRz.png)
+
+
+
+最后下一步直接merge了 就完成了一次合并仓库的作业。
+
+![](https://i.imgur.com/vgIVgIg.jpeg)
+
+
+
+妈的，如果你看你最后一次合并的代码时间与最新提交的太久远就这样做一下，不做的话如果冲突我还得手动改，麻烦。
+
+
+
+------
+
+## 这里是修改并提交request的完整步骤：
+
+
 
 ![](https://i.imgur.com/vSu3ThN.jpeg)
  ->
