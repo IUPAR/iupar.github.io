@@ -1,0 +1,12 @@
+@charset "utf-8";
+.header-image {
+	width: 100%;
+	overflow: hidden;
+	background: url("../bg/random1.jpg") no-repeat center;
+}
+.mask {
+	width: 100%;
+    color: #ffffff;
+	background: rgba(101, 101, 101, 0.8);
+    opacity: 1;
+}
