@@ -1,209 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>International Union of Pure and Applied Randomness</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/app.css">
-	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>International Union of Pure and Applied Randomness</title>
+<!-- Bootstrap -->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    // jQuery代码
+    $(document).ready(function () {
+        $("#news").click(function () {
+            $("#tab_1").show();// 显示
+            $("#tab_2").hide();// 隐藏
+        });
+        $("#b2").click(function () {
+            $("#tab_1").hide();
+            $("#tab_2").show();
+        });
+    });
+</script>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
-	<style>
-		h1 {font-family: 'Noto Sans SC', sans-serif;}
-		h2 {font-family: 'Noto Sans SC', sans-serif;}
-		p {font-family: 'Noto Sans SC', sans-serif;}
-	</style>
-  </head>
-  <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <a class="navbar-brand " href="#">IUPAR</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"> <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="./news.html">News</a> </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a> 
-            </div>
-          </li>
-          <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-  </nav>
-    <header>
-      <div class="header-image">
-	      <div class="mask">
-			<div class="container">
-			  <div class="row">
-				<div class="col-12">
-	              <p class="text-center">&nbsp;</p>
-	              <p class="text-center">&nbsp;</p>
-                  <h1 class="text-center"><strong>国际纯粹与应用随机联合会（总会）</strong></h1>
-<h2 class="text-center">International Union of Pure and Applied Randomness (Always)</h2>
-<p class="text-center"><em>⭐⭐⭐⭐⭐&nbsp; &nbsp; 该群一切正常</em></p>
-<p>&nbsp;</p>
-				  <p class="text-center"><a class="btn btn-primary btn-lg" href="https://jq.qq.com/?_wv=1027&k=HjZ5cp8C" role="button">点击加入文书阁</a></p>
-				  <p class="text-center">&nbsp;</p>
-                </div>
-			  </div>
-			</div>
-	      </div>
-      </div>
-  </header>
-    <section>
+<style>
+h1 {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+h2 {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+p {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light " > <a class="navbar-brand " href="#">IUPAR</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="./news.html">News</a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a> </div>
+      </li>
+      <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<header>
+  <div class="header-image">
+    <div class="mask">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mb-4 mt-2 text-center">
-            <h2>ABOUT US</h2>
-          </div>
-        </div>
-      </div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/wang.jpg" data-holder-rendered="true">
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/guan.jpg" data-holder-rendered="true">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/shen.jpg" data-holder-rendered="true">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/nm.jpg" data-holder-rendered="true">
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/het.jpg" data-holder-rendered="true">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/bot.jpg" data-holder-rendered="true">
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 mt-4 mb-2 text-center">
-            <h2>TESTIMONIALS</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <p class="mb-0">只要你学习4c你就永远不会无聊不然你想让你的子孙循环吗</p>
-              <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> 
-            </blockquote>
-          </div>
-          <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <p class="mb-0">wym用29个臀砸中了 @王畅857142 ！</p>
-              <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> 
-            </blockquote>
-          </div>
-          <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <p class="mb-0">是的我们每个人将自己扩大两倍去获得这份文件</p>
-              <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> 
-            </blockquote>
-          </div>
-          <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <p class="mb-0">现在每一次打开GMS2都仿佛让我被不洗脚5637似水流年魔方轮奸 塞入通用研磨机 热力离心机 洗矿机 通用研磨机 烧了 吃了 拉出来了 又吃了 又拉出来了 塞入化粪池一样难受</p>
-              <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> 
-            </blockquote>
-          </div>
-        </div>
-      </div>
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-            <div class="text-center col-md-8 col-12 mx-auto">
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, praesentium, autem, veritatis error quidem eos fuga atque asperiores magnam deleniti necessitatibus sequi</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-auto mx-auto"> <a class="btn btn-block btn-lg btn-success" href="#" title="">点击与王畅杂交</a> </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">&nbsp;</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-auto mx-auto"> <a class="btn btn-block btn-lg btn-success" href="#" title="">点击送玛丽头油</a> </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 mx-auto">
-          <div class="jumbotron">
-            <div class="row text-center">
-              <div class="text-center col-12">
-                <h2>免费咨询</h2>
-              </div>
-              <div class="text-center col-12">
-                <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
-                <form id="feedbackForm" class="text-center">
-                  <div class="form-group">
-                    <label for="name">姓名</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="姓名" aria-describedby="nameHelp">
-                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="name2">户籍</label>
-                    <input type="text" class="form-control" id="name2" name="name2" placeholder="户籍" aria-describedby="nameHelp">
-                    <span id="nameHelp2" class="form-text text-muted" style="display: none;">Please enter your name.</span> </div>
-                  <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="电子邮箱地址" aria-describedby="emailHelp">
-                    <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">简历</label>
-                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
-                    <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
-                  </div>
-                  <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg"> Send</button>
-                </form>
-              </div>
-            </div>
+          <div class="col-12">
+            <p class="text-center">&nbsp;</p>
+            <p class="text-center">&nbsp;</p>
+            <h1 class="text-center"><strong>国际纯粹与应用随机联合会（总会）</strong></h1>
+            <h2 class="text-center">International Union of Pure and Applied Randomness (Always)</h2>
+            <p class="text-center"><em>⭐⭐⭐⭐⭐&nbsp; &nbsp; 该群一切正常</em></p>
+            <p>&nbsp;</p>
+            <p class="text-center"><a class="btn btn-primary btn-lg" href="https://jq.qq.com/?_wv=1027&k=HjZ5cp8C" role="button">点击加入文书阁</a></p>
+            <p class="text-center">&nbsp;</p>
           </div>
         </div>
       </div>
     </div>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © 滚. All rights reserved.</p>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mb-4 mt-2 text-center">
+        <h2>ABOUT US</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/wang.jpg" data-holder-rendered="true">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/guan.jpg" data-holder-rendered="true">
+        <h3>Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/shen.jpg" data-holder-rendered="true">
+        <h3>Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/nm.jpg" data-holder-rendered="true">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/het.jpg" data-holder-rendered="true">
+        <h3>Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/bot.jpg" data-holder-rendered="true">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 mt-4 mb-2 text-center">
+        <h2>TESTIMONIALS</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">只要你学习4c你就永远不会无聊不然你想让你的子孙循环吗</p>
+          <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
+      </div>
+      <div class="col-sm-6 col-lg-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">wym用29个臀砸中了 @王畅857142 ！</p>
+          <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
+      </div>
+      <div class="col-sm-6 col-lg-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">是的我们每个人将自己扩大两倍去获得这份文件</p>
+          <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
+      </div>
+      <div class="col-sm-6 col-lg-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">现在每一次打开GMS2都仿佛让我被不洗脚5637似水流年魔方轮奸 塞入通用研磨机 热力离心机 洗矿机 通用研磨机 烧了 吃了 拉出来了 又吃了 又拉出来了 塞入化粪池一样难受</p>
+          <small class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-md-8 col-12 mx-auto">
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, praesentium, autem, veritatis error quidem eos fuga atque asperiores magnam deleniti necessitatibus sequi</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-auto mx-auto"> <a class="btn btn-block btn-lg btn-success" href="#" title="">点击与王畅杂交</a> </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-auto mx-auto"> <a class="btn btn-block btn-lg btn-success" href="#" title="">点击送玛丽头油</a> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8 mx-auto">
+      <div class="jumbotron">
+        <div class="row text-center">
+          <div class="text-center col-12">
+            <h2>免费咨询</h2>
+          </div>
+          <div class="text-center col-12"> 
+            <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
+            <form id="feedbackForm" class="text-center">
+              <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="姓名" aria-describedby="nameHelp">
+                <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span> </div>
+              <div class="form-group">
+                <label for="name2">户籍</label>
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="户籍" aria-describedby="nameHelp">
+                <span id="nameHelp2" class="form-text text-muted" style="display: none;">Please enter your name.</span> </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="电子邮箱地址" aria-describedby="emailHelp">
+                <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span> </div>
+              <div class="form-group">
+                <label for="message">简历</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span> </div>
+              <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg"> Send</button>
+            </form>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-  <script src="js/jquery-3.4.1.min.js"></script> 
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-  <script src="js/popper.min.js"></script> 
-  <script src="js/bootstrap-4.4.1.js"></script>
-  </body>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © 滚. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
 </html>
