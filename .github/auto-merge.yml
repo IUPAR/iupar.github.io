@@ -1,7 +1,6 @@
 rules:
 - minApprovals:
-    OWNER: 1
-    CONTRIBUTOR: 1
+  NONE: 0
 - requiredLabels:
   - merge
 
