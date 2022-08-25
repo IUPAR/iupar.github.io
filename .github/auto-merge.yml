@@ -1,4 +1,6 @@
 rules:
+minApprovals:
+  COLLABORATOR: 0
 - requiredLabels:
   - merge
 
