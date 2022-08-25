@@ -1,5 +1,6 @@
 rules:
 - minApprovals:
+  NONE: 0
 - requiredLabels:
   - merge
 
