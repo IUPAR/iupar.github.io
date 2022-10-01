@@ -1,6 +1,5 @@
 rules:
 minApprovals:
-  COLLABORATOR: 1
   OWNER: 1
 - requiredLabels:
   - merge
