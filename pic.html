@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>International Union of Pure and Applied Randomness</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/pic.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        p {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light " > <a class="navbar-brand " href="#">IUPAR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"> <a class="nav-link" href="./index.html">家 <span class="sr-only">(current)</span></a> </li>
+            <li class="nav-item"> <a class="nav-link" href="./news.html">东南西北</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="./pic.html">发图</a> </li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a> </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<header>
+    <div class="header-image">
+        <div class="mask">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center">&nbsp;</p>
+                        <p class="text-center">&nbsp;</p>
+                        <h1 class="text-center"><strong>吃饭从一个合格的认识，到每一个人接受图片的存在</strong></h1>
+                        <p class="text-center">&nbsp;</p>
+                        <p class="text-center">基于尼克·胡哲理论搭建</p>
+                        <p class="text-center">&nbsp;</p>
+                        <p class="text-center font-weight-light">卓越贡献者：<a href="https://iupar.github.io" class="text-white"><u>卢恩人</u></a></p>
+                        <p class="text-center">&nbsp;</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="row py-4">
+    <div class="col-lg-6 mx-auto">
+        <div class="col-12">
+            <div class="alert alert-danger collapse" role="alert"></div>
+            <div class="alert alert-success collapse" role="alert"></div>
+        </div>
+
+        <!-- Upload image input-->
+        <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+            <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+            <label id="upload-label" for="upload" class="font-weight-light text-muted">选择图片</label>
+            <div class="input-group-append">
+                <label class="btn btn-light m-0 rounded-pill px-4">
+                    <i class="fa fa-cloud-upload mr-2 text-muted"></i>
+                    <small class="text-uppercase font-weight-bold text-muted" onclick="fileUpdate()" >上传</small></label>
+            </div>
+        </div>
+
+        <!-- Uploaded image area-->
+        <p class="font-italic text-black text-center">该过程需要一些魔法</p>
+        <div class="image-area mt-4">
+            <img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block">
+        </div>
+    </div>
+</div>
+<footer class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Copyright © 滚. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    /*  ==========================================
+        SHOW UPLOADED IMAGE
+    * ========================================== */
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#imageResult')
+                    .attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $(function () {
+        $('#upload').on('change', function () {
+            readURL(input);
+        });
+    });
+
+    /*  ==========================================
+        SHOW UPLOADED IMAGE NAME
+    * ========================================== */
+    var input = document.getElementById('upload');
+    var infoArea = document.getElementById('upload-label');
+
+    input.addEventListener('change', showFileName);
+
+    function showFileName(event) {
+        var input = event.srcElement;
+        var fileName = input.files[0].name;
+        infoArea.textContent = 'File name: ' + fileName;
+    }
+
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fileUpdate.js"></script>
+</body>
+</html>
