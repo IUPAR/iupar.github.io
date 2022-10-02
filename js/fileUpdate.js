@@ -35,7 +35,7 @@ function fileUpdate() {
                 let uploadAjax = $.ajax({
                     type: "post",
                     //后端需要调用的地址
-                    url: "http://127.0.0.1/receiveImage/",
+                    url: "http://127.0.0.1:19023/receiveImage/",
                     data: JSON.stringify({"imgData": imgData}),
                     contentType: "json/application",
                     //设置超时
