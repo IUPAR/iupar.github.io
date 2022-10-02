@@ -3,10 +3,10 @@ function fileUpdate() {
     let f = document.getElementById('upload');
     let filename = f.value; // 'C:\fakepath\test.png'
     if (!filename || !(
-        filename.endsWith('.jpg') || filename.endsWith('.png') || filename.endsWith('.jpeg') || filename.endsWith('.gif') ||
-        filename.endsWith('.JPG') || filename.endsWith('.PNG') || filename.endsWith('.JPEG') || filename.endsWith('.GIF')
+        filename.endsWith('.jpg') || filename.endsWith('.png') || filename.endsWith('.jpeg') ||
+        filename.endsWith('.JPG') || filename.endsWith('.PNG') || filename.endsWith('.JPEG')
     )) {
-        $('.alert-danger').addClass('show').text('请上传正确的图片或动图！');
+        $('.alert-danger').addClass('show').text('请上传后缀名为jpg或png的图片！');
         window.setTimeout(function () {
             $('.alert-danger').removeClass('show');
         }, 2000);
@@ -24,8 +24,8 @@ function fileUpdate() {
             image.src = dataurl;
             image.onload = function () {
                 let canvas = document.createElement("canvas");
-                canvas.width = 600;
-                canvas.height = 600 * (image.height / image.width);
+                canvas.width = 1200;
+                canvas.height = 1200 * (image.height / image.width);
                 let ctx = canvas.getContext("2d");
                 ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                 let imgData = canvas.toDataURL("image/jpg");
@@ -35,7 +35,7 @@ function fileUpdate() {
                 let uploadAjax = $.ajax({
                     type: "post",
                     //后端需要调用的地址
-                    url: "http://127.0.0.1:19023/receiveImage/",
+                    url: "http://119.23.155.118:19023/receiveImage/",
                     data: JSON.stringify({"imgData": imgData}),
                     contentType: "json/application",
                     //设置超时

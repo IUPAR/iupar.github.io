@@ -17,14 +17,14 @@
 }
 
 .image-area {
-    border: 2px dashed rgba(255, 255, 255, 0.7);
+    border: 2px dashed rgba(0, 0, 0, 0.7);
     padding: 1rem;
     position: relative;
 }
 
 .image-area::before {
-    content: 'Uploaded image result';
-    color: #fff;
+    content: '上传结果';
+    color: rgba(0, 0, 0, 0.27);
     font-weight: bold;
     text-transform: uppercase;
     position: absolute;
